@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>IT Service WA — Your Trusted IT Partner</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <div class="brand">
+          <a
+            href="index.html"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              text-decoration: none;
+              color: inherit;
+            "
+          >
+            <img
+              src="assets/img/logo.png"
+              alt="IT Service WA logo"
+              class="logo"
+            />
+            <span class="brand-name">IT Service WA</span>
+          </a>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html"class="active">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+        <a href="tel:+61480780390" class="phone">+61 480 780 390</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-media">
+        <img
+          src="assets/img/Contactus.jpg"
+          alt="Technician working"
+          class="hero-img"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content container fade-slide-up">
+        <h1>Your Trusted IT Partner in Western Australia</h1>
+        <p class="lead">
+          Fast, reliable, and affordable IT solutions for home and business —
+          delivered by certified experts.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+61480780390">Call Now</a>
+          <a class="btn btn-outline" href="contact.html">Book a Service</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 CONTACT HERO TITLE -->
+    <section class="contact-hero fade-slide-up">
+      <h1>Get In Touch</h1>
+      <p>Fast, reliable, and professional IT support in Perth.</p>
+    </section>
+
+    <!-- 🔹 CONTACT INFO + FORM -->
+    <main class="container contact-page fade-slide-up">
+      <div class="contact-info fade-slide-left fade-slide-up">
+        <h2>Contact Information</h2>
+        <p>
+          <i class="fa-solid fa-location-dot"></i><strong>Address:</strong> Unit
+          6, 53 Mosaic Street East, Shelley, WA 6148
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i><strong>Phone:</strong>
+          <a href="tel:+61480780390">+61 480 780 390</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope"></i><strong>Email:</strong>
+          <a href="mailto:info@itservicewa.com.au">info@itservicewa.com.au</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-clock"></i><strong>Business Hours:</strong
+          ><br />
+          Monday – Saturday: 9:00 AM – 6:00 PM<br />Sunday: By Appointment
+        </p>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=Unit%206,%2053%20Mosaic%20Street%20East,%20Shelley,%20WA%206148&output=embed"
+          ></iframe>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form" onsubmit="sendEmail(event);">
+        <h2>Send Us a Message</h2>
+        <label
+          >Name
+          <input id="name" name="name" required placeholder="Your Name" />
+        </label>
+        <label
+          >Email
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="you@example.com"
+          />
+        </label>
+        <label
+          >Phone
+          <input id="phone" name="phone" type="tel" placeholder="Optional" />
+        </label>
+        <label
+          >Message
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            placeholder="Type your message here..."
+          ></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <!-- 🔹 FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>IT Service WA</h4>
+          <p>Unit 6, 53 Mosaic Street East, Shelley, WA 6148</p>
+          <p>
+            <a href="tel:+61480780390">+61 480 780 390</a> |
+            <a href="mailto:info@itservicewa.com.au">info@itservicewa.com.au</a>
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a><br />
+          <a href="about.html">About</a><br />
+          <a href="services.html">Services</a><br />
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <p>Facebook | Instagram | LinkedIn</p>
+        </div>
+      </div>
+      <div class="copyright">© 2025 IT Service WA. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="backToTop" title="Back to top">↑</button>
+
+    <script src="assets/js/animate.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init("bbDy1NBEGEsPED_KQ");
+
+      function sendEmail(e) {
+        e.preventDefault();
+        const params = {
+          from_name: document.getElementById("name").value,
+          from_email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          message: document.getElementById("message").value,
+        };
+        emailjs
+          .send("service_tenmyng", "template_ie93w3a", params)
+          .then(() => {
+            alert("✅ Message sent successfully!");
+            document.getElementById("contactForm").reset();
+          })
+          .catch((err) => {
+            console.error(err);
+            alert("❌ Failed to send message. Check console.");
+          });
+      }
+
+      // Mobile nav toggle
+      const navToggle = document.getElementById("navToggle");
+      const mainNav = document.getElementById("mainNav");
+      navToggle.addEventListener("click", () => {
+        mainNav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
