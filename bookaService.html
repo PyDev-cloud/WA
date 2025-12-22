@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO Title -->
+<title>Book IT Service Online | Computer Repair Perth</title>
+<!-- SEO Description -->
+<meta name="description" content="Book a technician online for computer repair, network setup, or IT consultation in Perth. Fast response and professional service." />
+<!-- Canonical -->
+<link rel="canonical" href="https://itservicewa.com.au/bookaService.html">
+
+<link rel="icon" href="assets/img/favicon.svg" sizes="any" type="image/svg+xml">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+<header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html" class="brand-link">
+            <img src="assets/img/logo.png" alt="IT Service logo WA " loading="lazy" class="logo" />
+          </a>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="Mission&Vision.html">Mission & Vision</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+
+        <div class="phone">
+          <i class="fas fa-headset"></i>
+          <div class="phone-text">
+            <span>Customer Care</span>
+            <a href="tel:+61480780390">+61 480 780 390</a>
+            <a href="tel:+61425174903">+61 425 174 903</a>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+
+<!-- Step 1 -->
+<div id="step1" class="step-box">
+  <h2 class="text-center mb-3">Select Services</h2>
+  <p class="text-center mb-4">Choose one or multiple services</p>
+
+  <div class="service-grid">
+
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Computer Repair">
+      <i class="fas fa-tools"></i> Computer Repair
+    </label>
+
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Network Setup">
+      <i class="fas fa-globe"></i> Network Setup
+    </label>
+
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Software Installation">
+      <i class="fas fa-download"></i> Software Installation
+    </label>
+
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="IT Consultation">
+      <i class="fas fa-lightbulb"></i> IT Consultation
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Mobile/Tablets">
+      <i class="fas fa-mobile-alt"></i> Mobile/Tablets
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Websites/SEO/Digital Marketing">
+      <i class="fas fa-chart-line"></i> Websites/SEO/Digital Marketing
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Home IT Support/Assistance">
+      <i class="fas fa-headset"></i> Home IT Support/Assistance
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Business IT Support/Assistance">
+      <i class="fas fa-briefcase"></i> Business IT Support/Assistance
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Hardware Repairs and Installations">
+      <i class="fas fa-desktop"></i> Hardware Repairs and Installations
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Software Repairs and Installations">
+      <i class="fas fa-laptop-code"></i>Software Repairs and Installations
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="Data Backup and Recovery">
+      <i class="fas fa-cloud-arrow-up"></i>Data Backup and Recovery
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="IT Remote Support—internet must be active.">
+      <i class="fas fa-wifi"></i>IT Remote Support—internet must be active.
+    </label>
+    <label class="service-box" onclick="toggleService(this)">
+      <input type="checkbox" name="service" value="IT $99 Promotion | Full PC/Mac Health Check.">
+      <i class="fas fa-stethoscope"></i>IT $99 Promotion | Full PC/Mac Health Check.
+    </label>
+
+
+  </div>
+
+  <button class="btn btn-primary w-100 mt-4" onclick="goNext()">Next →</button>
+</div>
+
+
+
+<!-- Step 2 -->
+<div id="step2" class="step-box hide">
+  <h2 class="text-center mb-4">Book Your Service</h2>
+
+  <form id="bookingForm">
+
+    <!-- Selected Services -->
+    <input type="hidden" id="selectedService" name="entry.307022604">
+
+    <label>Full Name <span class="required">*</span></label>
+    <input type="text" name="entry.153323614" required>
+
+    <label>Email <span class="required">*</span></label>
+    <input type="email" name="entry.1143107764" required>
+
+    <label>Phone <span class="required">*</span></label>
+    <input type="text" name="entry.1028583757" required>
+
+    <label>Address<span class="required">*</span></label>
+    <input type="text" name="entry.214483424">
+
+    
+
+    <label>Additional Message</label>
+    <textarea name="entry.1045014967" rows="3"></textarea>
+
+    <button type="submit">Submit Booking</button>
+
+  </form>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/img/logo.png" alt="IT Service Logo WA " loading="lazy" style="height: 80px;" />
+      <h4>IT Service Western Australia</h4>
+      <!-- Address Update -->
+      <p>Unit 6, 53 Mosaic Street East, Shelley WA 6148</p>
+      <p>
+        <a href="tel:+61480780390">+61 480 780 390</a> | 
+        <a href="tel:+61425174903">+61 425 174 903</a> <br>
+        <a href="mailto:info@itservicewa.com.au">info@itservicewa.com.au</a>
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a><br />
+      <a href="about.html">About</a><br />
+      <a href="services.html">Services</a><br />
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <p>Facebook | Instagram | LinkedIn</p>
+    </div>
+  </div>
+
+  <div class="copyright">© 2025 IT Service Western Australia. All Rights Reserved.</div>
+</footer>
+
+<button id="backToTop" title="Back to top">↑</button>
+
+<script src="assets/js/animate.js"></script>
+<script src="assets/js/contact.js"></script>
+<script>
+// Toggle selection
+function toggleService(box) {
+  let input = box.querySelector("input");
+  if (input.checked) {
+    box.classList.add("active");
+  } else {
+    box.classList.remove("active");
+  }
+}
+
+// Next Button
+function goNext() {
+  let selected = [...document.querySelectorAll("input[name='service']:checked")];
+
+  if (selected.length === 0) {
+    Swal.fire({
+      icon: "warning",
+      title: "Oops!",
+      text: "Please select at least one service!"
+    });
+    return;
+  }
+
+  let serviceList = selected.map(s => s.value).join(", ");
+  document.getElementById("selectedService").value = serviceList;
+
+  document.getElementById("step1").classList.add("hide");
+  document.getElementById("step2").classList.remove("hide");
+}
+
+
+// Form Submit
+const form = document.getElementById("bookingForm");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+
+
+  Swal.fire({
+    icon: "success",
+    title: "Booking Submitted",
+    text: "We will contact you soon.",
+    confirmButtonText: "OK"
+  });
+
+  fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScRoYyKp_vA5LjOlY4af1OyFGJ3Q4bkP-hNJ0ljEFSo1WIzaw/formResponse", {
+    method: "POST",
+    body: formData,
+    mode: "no-cors"
+  });
+  // Clear step 1 selections
+  document.querySelectorAll("input[name='service']").forEach(s => {
+      s.checked = false;
+  });
+
+  document.querySelectorAll(".service-box").forEach(b => {
+      b.classList.remove("active");
+  });
+
+  form.reset();
+  document.getElementById("step2").classList.add("hide");
+  document.getElementById("step1").classList.remove("hide");
+});
+</script>
+
+<!-- SCHEMA MARKUP -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "IT Service Western Australia",
+  "url": "https://itservicewa.com.au",
+  "telephone": "+61480780390",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit 6, 53 Mosaic Street East",
+    "addressLocality": "Shelley",
+    "addressRegion": "WA",
+    "postalCode": "6148",
+    "addressCountry": "AU"
+  },
+  "areaServed": "Perth, Western Australia"
+}
+</script>
+
+</body>
+</html>

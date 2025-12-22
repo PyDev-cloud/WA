@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://itservicewa.com.au/sitemap.xml
