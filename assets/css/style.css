@@ -6,6 +6,15 @@
   margin: 0;
   padding: 0;
 }
+    :root {
+            --primary-color: #0056b3;
+            --secondary-color: #004494;
+            --accent-color: #ff6600;
+            --text-dark: #333;
+            --text-light: #555;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+        }
 html {
   overflow-y: scroll; /* সবসময় scrollbar দেখাও → layout আর নড়বে না */
 }
@@ -537,10 +546,88 @@ body {
 }
 
 
-
 /* =======================
-   CONTACT CTA
+ Local IT Services Section 
 ======================= */
+
+
+
+.local-it-services {
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.local-it-services h2 {
+  color: #1a73e8;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.local-it-services p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
+}
+
+/* Service Links Styling */
+.service-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.service-links a {
+  padding: 10px 15px;
+  background-color: #1a73e8;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.service-links a:hover {
+  background-color: #155ab6;
+}
+
+/* Fade Slide Up Animation */
+.fade-slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.6s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Responsive for Mobile */
+@media (max-width: 600px) {
+  .service-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-links a {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+
+
+
+
 /* =======================
    CONTACT CTA (Modern Card)
 ======================= */
@@ -1543,5 +1630,180 @@ button:hover {
     select,
     textarea {
         font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+      computer-repair-perth
+================================== */
+
+ .section-padding { padding: 80px 0; }
+
+        h2.section-title {
+            color: var(--secondary-color);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            color: var(--text-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,.05);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .feature-wrapper {
+            background: var(--bg-light);
+            border-radius: 15px;
+            padding: 50px;
+            margin: 60px 0;
+            display: flex;
+            gap: 40px;
+        }
+
+        .custom-list { list-style: none; padding: 0; }
+        .custom-list li { margin-bottom: 12px; }
+
+        .internal-links {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 70px;
+        }
+
+        .internal-links a {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+      /* CTA Section */
+.cta-modern {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    padding: var(--cta-padding);
+    border-radius: 30px; /* পুরাতন 20px থেকে বাড়ানো */
+    text-align: center;
+    margin-top: 80px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* হালকা shadow বাড়ানো */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Card */
+.cta-modern:hover {
+    transform: translateY(-5px); /* subtle floating effect */
+}
+
+/* Optional subtle background animation */
+.cta-modern::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.05);
+    top: -50%;
+    left: -50%;
+    transform: rotate(45deg);
+    animation: rotate-bg 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotate-bg {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Heading */
+.cta-modern h3 {
+    margin-top: 15px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Paragraph */
+.cta-modern p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Phone highlight */
+.cta-phone {
+    font-size: 1.25rem;
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    background: #fff;
+    color: var(--primary-color);
+    padding: 15px 40px;
+    margin-bottom: 20px;
+    border-radius: 50px; /* Already nicely rounded */
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.cta-btn:hover {
+    background: rgba(255,255,255,0.9);
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cta-modern {
+        padding: 40px 20px;
+        border-radius: 20px; /* Responsive rounding */
+    }
+    .cta-modern h3 {
+        font-size: 1.6rem;
+    }
+    .cta-modern p {
+        font-size: 1rem;
+    }
+    .cta-btn {
+        padding: 12px 30px;
     }
 }
