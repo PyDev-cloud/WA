@@ -1,50 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <!-- Home Page -->
   <url>
-    <loc>https://itservicewa.com.au/index.html</loc>
-    <lastmod>2025-12-20</lastmod>
+    <loc>https://dunetech.com.au/</loc>
+    <lastmod>2025-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <!-- Service Booking -->
   <url>
-    <loc>https://itservicewa.com.au/bookaService.html</loc>
-    <lastmod>2025-12-20</lastmod>
+    <loc>https://dunetech.com.au/bookaService.html</loc>
+    <lastmod>2025-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <!-- Main Services Page -->
   <url>
-    <loc>https://itservicewa.com.au/services.html</loc>
-    <lastmod>2025-12-20</lastmod>
+    <loc>https://dunetech.com.au/services.html</loc>
+    <lastmod>2025-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
+  <!-- Laptop Repair -->
+  <url>
+    <loc>https://dunetech.com.au/laptop-repair-perth.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Printer & WiFi Setup -->
+  <url>
+    <loc>https://dunetech.com.au/printer-wifi-setup-perth.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Computer Repair -->
+  <url>
+    <loc>https://dunetech.com.au/computer-repair-perth.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- IT Support -->
+  <url>
+    <loc>https://dunetech.com.au/it-support-perth.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Contact Page -->
   <url>
-    <loc>https://itservicewa.com.au/contact.html</loc>
-    <lastmod>2025-12-20</lastmod>
+    <loc>https://dunetech.com.au/contact.html</loc>
+    <lastmod>2025-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <!-- About Page -->
   <url>
-    <loc>https://itservicewa.com.au/about.html</loc>
-    <lastmod>2025-12-20</lastmod>
+    <loc>https://dunetech.com.au/about.html</loc>
+    <lastmod>2025-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <!-- Mission & Vision -->
   <url>
-    <loc>https://itservicewa.com.au/Mission&amp;Vision.html</loc>
-    <lastmod>2025-12-20</lastmod>
+    <loc>https://dunetech.com.au/mission-vision.html</loc>
+    <lastmod>2025-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
+
 </urlset>
